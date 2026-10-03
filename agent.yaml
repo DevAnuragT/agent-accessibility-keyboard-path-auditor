@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: accessibility-keyboard-path-auditor
+version: 0.1.0
+description: Review workflow steps for keyboard reachability, focus, and escape behavior.
+skills:
+  - accessibility-keyboard-path-auditor-skill
+tools:
+  - review-accessibility-keyboard-path-auditor
+tags:
+  - accessibility
+  - evidence-driven

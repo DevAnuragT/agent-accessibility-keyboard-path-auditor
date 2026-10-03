@@ -1,0 +1,9 @@
+{
+  "workflow_steps": [
+    "record-1"
+  ],
+  "focus_evidence": [
+    "record-1"
+  ],
+  "escape_behavior": "evidence-record"
+}

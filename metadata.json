@@ -1,0 +1,24 @@
+{
+  "slug": "accessibility-keyboard-path-auditor",
+  "title": "Accessibility Keyboard Path Auditor",
+  "category": "accessibility",
+  "description": "Review workflow steps for keyboard reachability, focus, and escape behavior.",
+  "fields": {
+    "workflow_steps": {
+      "label": "workflow steps",
+      "kind": "list",
+      "minimum": 1
+    },
+    "focus_evidence": {
+      "label": "focus evidence",
+      "kind": "list",
+      "minimum": 1
+    },
+    "escape_behavior": {
+      "label": "escape behavior",
+      "kind": "required",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

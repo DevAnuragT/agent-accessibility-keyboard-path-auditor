@@ -1,0 +1,54 @@
+{
+  "name": "review-accessibility-keyboard-path-auditor",
+  "description": "Run Accessibility Keyboard Path Auditor",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "workflow_steps": {
+            "type": "array",
+            "description": "workflow steps"
+          },
+          "focus_evidence": {
+            "type": "array",
+            "description": "focus evidence"
+          },
+          "escape_behavior": {
+            "type": "string",
+            "description": "escape behavior"
+          }
+        },
+        "required": [
+          "workflow_steps",
+          "focus_evidence",
+          "escape_behavior"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-accessibility-keyboard-path-auditor.py",
+    "runtime": "python3"
+  }
+}
